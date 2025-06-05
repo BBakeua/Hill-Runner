@@ -194,15 +194,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ruy2r"]
-size = Vector2(13, 25)
+size = Vector2(15.5, 31.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+z_index = 5
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(49, -12)
 sprite_frames = SubResource("SpriteFrames_fkitg")
 animation = &"Idle"
 autoplay = "Idle"
+offset = Vector2(-38, 7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-9.5, 11.5)
+position = Vector2(1.25, 3.25)
 shape = SubResource("RectangleShape2D_ruy2r")
