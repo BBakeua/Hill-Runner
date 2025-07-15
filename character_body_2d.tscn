@@ -195,19 +195,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ruy2r"]
-size = Vector2(15.5, 31.5)
+size = Vector2(20, 31.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 z_index = 5
 script = ExtResource("1_qjnsc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(49, -12)
+position = Vector2(39.9583, -12.6458)
+scale = Vector2(0.854167, 1.02083)
 sprite_frames = SubResource("SpriteFrames_fkitg")
-animation = &"Idle"
+animation = &"Run"
 autoplay = "Idle"
 offset = Vector2(-38, 7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.25, 3.25)
+position = Vector2(1, 3.25)
 shape = SubResource("RectangleShape2D_ruy2r")
