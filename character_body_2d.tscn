@@ -1,8 +1,7 @@
-[gd_scene load_steps=31 format=3 uid="uid://dla2eno4o4wwf"]
+[gd_scene load_steps=28 format=3 uid="uid://dla2eno4o4wwf"]
 
 [ext_resource type="Texture2D" uid="uid://xyxp83tccap2" path="res://craftpix-net-856554-free-3-cyberpunk-characters-pixel-art (1)/1 Biker/Biker_death.png" id="1_hyuxp"]
 [ext_resource type="Script" path="res://character_body_2d.gd" id="1_qjnsc"]
-[ext_resource type="Texture2D" uid="uid://ce6a0ojas1x0c" path="res://craftpix-net-856554-free-3-cyberpunk-characters-pixel-art (1)/1 Biker/Biker_hurt.png" id="2_auo75"]
 [ext_resource type="Texture2D" uid="uid://dggsp8dqx5w3j" path="res://craftpix-net-856554-free-3-cyberpunk-characters-pixel-art (1)/1 Biker/Biker_idle.png" id="3_uj05g"]
 [ext_resource type="Texture2D" uid="uid://dffoxkrg3jxs0" path="res://craftpix-net-856554-free-3-cyberpunk-characters-pixel-art (1)/1 Biker/Biker_jump.png" id="4_80b0l"]
 [ext_resource type="Texture2D" uid="uid://dhrwu6xwxahud" path="res://craftpix-net-856554-free-3-cyberpunk-characters-pixel-art (1)/1 Biker/Biker_run.png" id="5_nunsl"]
@@ -30,14 +29,6 @@ region = Rect2(192, 0, 48, 48)
 [sub_resource type="AtlasTexture" id="AtlasTexture_wtskk"]
 atlas = ExtResource("1_hyuxp")
 region = Rect2(240, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b0g1m"]
-atlas = ExtResource("2_auo75")
-region = Rect2(0, 0, 48, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3eew8"]
-atlas = ExtResource("2_auo75")
-region = Rect2(48, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xg62s"]
 atlas = ExtResource("3_uj05g")
@@ -122,17 +113,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_b0g1m")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3eew8")
-}],
-"loop": true,
-"name": &"Hurt",
-"speed": 3.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_xg62s")
 }, {
 "duration": 1.0,
@@ -187,11 +167,6 @@ animations = [{
 "loop": true,
 "name": &"Run",
 "speed": 10.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"default",
-"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ruy2r"]
@@ -205,7 +180,7 @@ script = ExtResource("1_qjnsc")
 position = Vector2(39.9583, -12.6458)
 scale = Vector2(0.854167, 1.02083)
 sprite_frames = SubResource("SpriteFrames_fkitg")
-animation = &"Run"
+animation = &"Death"
 autoplay = "Idle"
 offset = Vector2(-38, 7)
 
