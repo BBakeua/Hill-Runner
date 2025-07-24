@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 # Editable movement parameters
 @export var speed : float = 200.0
-@export var jump_velocity : float = -300.0
+@export var jump_velocity : float = -250.0
 @export var gravity : float = 980.0
 
 # Animation node reference
@@ -16,23 +16,25 @@ func _physics_process(delta):
 	velocity.y += gravity * delta
 	
 	# Horizontal movement
-	var input_direction = Input.get_axis("move_left", "move_right")
+	var input_direction = Input.get_axis("Move_left", "Move_right")
 	velocity.x = input_direction * speed
 	
 	# Jump
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = jump_velocity
 		is_jumping = true
 	
 	# Update animation
 	update_animation(input_direction)
 	
-	# Move the character
-	move_and_slide()
+	
 	
 	# Reset jump state if on floor
 	if is_on_floor():
 		is_jumping = false
+		
+	# Move the character
+	move_and_slide()
 
 func update_animation(input_direction):
 	if not is_on_floor():

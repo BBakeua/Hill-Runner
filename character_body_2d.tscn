@@ -170,7 +170,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ruy2r"]
-size = Vector2(20, 31.5)
+size = Vector2(17, 35)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 z_index = 5
@@ -185,5 +185,5 @@ autoplay = "Idle"
 offset = Vector2(-38, 7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 3.25)
+position = Vector2(-1.5, 1.5)
 shape = SubResource("RectangleShape2D_ruy2r")
