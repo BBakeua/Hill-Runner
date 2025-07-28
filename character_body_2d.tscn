@@ -170,20 +170,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ruy2r"]
-size = Vector2(17, 35)
+size = Vector2(17, 34)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 z_index = 5
 script = ExtResource("1_qjnsc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(39.9583, -12.6458)
-scale = Vector2(0.854167, 1.02083)
+position = Vector2(44, -13)
+scale = Vector2(0.916666, 1.02083)
 sprite_frames = SubResource("SpriteFrames_fkitg")
 animation = &"Death"
 autoplay = "Idle"
 offset = Vector2(-38, 7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.5, 1.5)
+position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_ruy2r")
