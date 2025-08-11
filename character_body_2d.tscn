@@ -169,7 +169,8 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n4cyp"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_248mw"]
+size = Vector2(20, 34)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 z_index = 5
@@ -179,9 +180,10 @@ script = ExtResource("1_qjnsc")
 position = Vector2(37, -8)
 scale = Vector2(0.975694, 0.992619)
 sprite_frames = SubResource("SpriteFrames_fkitg")
-animation = &"Jump"
+animation = &"Idle"
 autoplay = "Idle"
 offset = Vector2(-38, 7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_n4cyp")
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_248mw")
