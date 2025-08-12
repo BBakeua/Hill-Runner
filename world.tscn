@@ -572,7 +572,6 @@ layer_0/tile_data = PackedInt32Array(393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 4
 position = Vector2(99, -158)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(3, 3)
 zoom = Vector2(3, 3)
 
 [node name="Platform" parent="." instance=ExtResource("3_lcna2")]
