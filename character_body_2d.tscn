@@ -169,8 +169,8 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_248mw"]
-size = Vector2(20, 34)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_28abl"]
+height = 36.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 z_index = 5
@@ -186,4 +186,4 @@ offset = Vector2(-38, 7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -1)
-shape = SubResource("RectangleShape2D_248mw")
+shape = SubResource("CapsuleShape2D_28abl")
