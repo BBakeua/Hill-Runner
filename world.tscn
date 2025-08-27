@@ -631,3 +631,24 @@ position = Vector2(-550, 80)
 position = Vector2(-532, 80)
 
 [node name="Area2D4" parent="Coins" instance=ExtResource("5_ja1tk")]
+
+[node name="Area2D5" parent="Coins" instance=ExtResource("5_ja1tk")]
+position = Vector2(-1630, 243)
+
+[node name="Area2D6" parent="Coins" instance=ExtResource("5_ja1tk")]
+position = Vector2(-1734, 242)
+
+[node name="Area2D7" parent="Coins" instance=ExtResource("5_ja1tk")]
+position = Vector2(-2157, 308)
+
+[node name="Area2D8" parent="Coins" instance=ExtResource("5_ja1tk")]
+position = Vector2(-1694, 435)
+
+[node name="Area2D9" parent="Coins" instance=ExtResource("5_ja1tk")]
+position = Vector2(-1370, 210)
+
+[node name="Area2D10" parent="Coins" instance=ExtResource("5_ja1tk")]
+position = Vector2(-1278, 450)
+
+[node name="Area2D11" parent="Coins" instance=ExtResource("5_ja1tk")]
+position = Vector2(-902, -28)
