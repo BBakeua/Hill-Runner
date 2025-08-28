@@ -170,7 +170,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_28abl"]
-height = 36.0
+radius = 9.0
+height = 34.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 z_index = 5
@@ -186,5 +187,4 @@ autoplay = "Idle"
 offset = Vector2(-38, 7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -1)
 shape = SubResource("CapsuleShape2D_28abl")
