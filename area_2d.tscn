@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=3 uid="uid://dl5h1biychwvh"]
+
+[ext_resource type="Texture2D" uid="uid://kw633abd4q6i" path="res://brackeys_platformer_assets/brackeys_platformer_assets/Sprites 1/Green Portal Sprite Sheet.png" id="1_n7511"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nu4hj"]
+atlas = ExtResource("1_n7511")
+region = Rect2(0, 12, 64, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6nsm"]
+atlas = ExtResource("1_n7511")
+region = Rect2(64, 12, 64, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qp21y"]
+atlas = ExtResource("1_n7511")
+region = Rect2(128, 12, 64, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6p0i"]
+atlas = ExtResource("1_n7511")
+region = Rect2(192, 12, 64, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70juv"]
+atlas = ExtResource("1_n7511")
+region = Rect2(256, 12, 64, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6c2v"]
+atlas = ExtResource("1_n7511")
+region = Rect2(320, 12, 64, 52)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7fwre"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nu4hj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6nsm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qp21y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6p0i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_70juv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6c2v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6jprc"]
+height = 48.0
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7fwre")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_6jprc")
+
+[node name="Destination" type="Marker2D" parent="."]
+position = Vector2(-42, 0)
