@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://dl5h1biychwvh"]
+[gd_scene load_steps=11 format=3 uid="uid://dl5h1biychwvh"]
 
+[ext_resource type="Script" uid="uid://dl3kv5ywattjy" path="res://area_2d.gd" id="1_hcftn"]
 [ext_resource type="Texture2D" uid="uid://kw633abd4q6i" path="res://brackeys_platformer_assets/brackeys_platformer_assets/Sprites 1/Green Portal Sprite Sheet.png" id="1_n7511"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nu4hj"]
@@ -55,7 +56,8 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6jprc"]
 height = 48.0
 
-[node name="Area2D" type="Area2D"]
+[node name="Portal" type="Area2D"]
+script = ExtResource("1_hcftn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_7fwre")
@@ -66,3 +68,5 @@ shape = SubResource("CapsuleShape2D_6jprc")
 
 [node name="Destination" type="Marker2D" parent="."]
 position = Vector2(-42, 0)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

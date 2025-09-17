@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://dla2eno4o4wwf"]
 
 [ext_resource type="Texture2D" uid="uid://xyxp83tccap2" path="res://craftpix-net-856554-free-3-cyberpunk-characters-pixel-art (1)/1 Biker/Biker_death.png" id="1_hyuxp"]
-[ext_resource type="Script" path="res://character_body_2d.gd" id="1_qjnsc"]
+[ext_resource type="Script" uid="uid://b2klgvfa4h0ti" path="res://character_body_2d.gd" id="1_qjnsc"]
 [ext_resource type="Texture2D" uid="uid://dggsp8dqx5w3j" path="res://craftpix-net-856554-free-3-cyberpunk-characters-pixel-art (1)/1 Biker/Biker_idle.png" id="3_uj05g"]
 [ext_resource type="Texture2D" uid="uid://dffoxkrg3jxs0" path="res://craftpix-net-856554-free-3-cyberpunk-characters-pixel-art (1)/1 Biker/Biker_jump.png" id="4_80b0l"]
 [ext_resource type="Texture2D" uid="uid://dhrwu6xwxahud" path="res://craftpix-net-856554-free-3-cyberpunk-characters-pixel-art (1)/1 Biker/Biker_run.png" id="5_nunsl"]
@@ -173,7 +173,7 @@ animations = [{
 radius = 9.0
 height = 34.0
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["Player"]]
 z_index = 5
 collision_layer = 2
 script = ExtResource("1_qjnsc")
