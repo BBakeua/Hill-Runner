@@ -53,8 +53,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6jprc"]
-height = 48.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dl81w"]
+size = Vector2(10, 42)
 
 [node name="Portal" type="Area2D"]
 script = ExtResource("1_hcftn")
@@ -64,7 +64,8 @@ sprite_frames = SubResource("SpriteFrames_7fwre")
 autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_6jprc")
+position = Vector2(4, -2)
+shape = SubResource("RectangleShape2D_dl81w")
 
 [node name="Destination" type="Marker2D" parent="."]
 position = Vector2(-42, 0)

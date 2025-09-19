@@ -2,4 +2,5 @@ extends Area2D
 
 
 func _on_body_entered(body):
-	pass # Replace with function body.
+	if body.is_in_group("Player"):
+		body.set_position($Destination.global_position)
